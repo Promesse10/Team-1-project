@@ -5,7 +5,7 @@ import ReactDatePicker from "react-datepicker";
 import { Control } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
 
-import { Checkbox } from "./ui/checkbox";
+
 import {
   FormControl,
   FormField,
@@ -94,11 +94,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
       return (
         <FormControl>
           <div className="flex items-center gap-4">
-            <Checkbox
-              id={props.name}
-              checked={field.value}
-              onCheckedChange={field.onChange}
-            />
+          
             <label htmlFor={props.name} className="checkbox-label">
               {props.label}
             </label>
